@@ -16,8 +16,6 @@ ARGV.each do |arg|
     is_inserted = false
     i = 0
     l = result.size
-
-    while i < l do
     while !is_inserted && i < l do
         if result[i] < i_arg
             i += 1
@@ -30,4 +28,4 @@ ARGV.each do |arg|
     result << i_arg if !is_inserted
 end
 
-puts result.sort
+puts result
